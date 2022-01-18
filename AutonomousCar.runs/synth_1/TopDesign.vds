@@ -1,0 +1,381 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jan 21 15:14:22 2022
+# Process ID: 2416
+# Current directory: C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.runs/synth_1
+# Command line: vivado.exe -log TopDesign.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopDesign.tcl
+# Log file: C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.runs/synth_1/TopDesign.vds
+# Journal file: C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopDesign.tcl -notrace
+Command: synth_design -top TopDesign -part xc7a50tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Device 21-403] Loading part xc7a50tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2076 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 672.859 ; gain = 176.930
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port reset is neither a static name nor a globally static expression [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Distance_calculation.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'TopDesign' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/TopDesign.vhd:55]
+INFO: [Synth 8-3491] module 'motor_control' declared at 'C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/motor_control.vhd:34' bound to instance 'uut1' of component 'motor_control' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/TopDesign.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'motor_control' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/motor_control.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'motor_control' (1#1) [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/motor_control.vhd:43]
+INFO: [Synth 8-3491] module 'Segment_driver' declared at 'C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Segment_driver.vhd:35' bound to instance 'uut2' of component 'segment_driver' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/TopDesign.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'Segment_driver' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Segment_driver.vhd:54]
+INFO: [Synth 8-3491] module 'Segment_decoder' declared at 'C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Segment_decoder.vhd:37' bound to instance 'uut' of component 'Segment_decoder' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Segment_driver.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'Segment_decoder' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Segment_decoder.vhd:48]
+INFO: [Synth 8-226] default block is never used [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Segment_decoder.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'Segment_decoder' (2#1) [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Segment_decoder.vhd:48]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/clock_divider.vhd:7' bound to instance 'uut1' of component 'clock_divider' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Segment_driver.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/clock_divider.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (3#1) [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/clock_divider.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Segment_driver' (4#1) [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Segment_driver.vhd:54]
+INFO: [Synth 8-3491] module 'Range_sensor' declared at 'C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Range_sensor.vhd:36' bound to instance 'uut3' of component 'Range_sensor' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/TopDesign.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'Range_sensor' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Range_sensor.vhd:49]
+INFO: [Synth 8-3491] module 'Trigger_generator' declared at 'C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Trigger_generator.vhd:34' bound to instance 'trig_generator' of component 'trigger_generator' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Range_sensor.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Trigger_generator' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Trigger_generator.vhd:39]
+	Parameter n bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Counter.vhd:35' bound to instance 'trig' of component 'counter' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Trigger_generator.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Counter.vhd:43]
+	Parameter n bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Counter' (5#1) [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Counter.vhd:43]
+WARNING: [Synth 8-614] signal 'output_counter' is read in the process but is not in the sensitivity list [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Trigger_generator.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'Trigger_generator' (6#1) [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Trigger_generator.vhd:39]
+INFO: [Synth 8-3491] module 'Distance_calculation' declared at 'C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Distance_calculation.vhd:36' bound to instance 'Pulse_width' of component 'distance_calculation' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Range_sensor.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Distance_calculation' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Distance_calculation.vhd:43]
+	Parameter n bound to: 22 - type: integer 
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Counter.vhd:35' bound to instance 'counter_pulse' of component 'counter' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Distance_calculation.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'Counter__parameterized0' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Counter.vhd:43]
+	Parameter n bound to: 22 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Counter__parameterized0' (6#1) [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Counter.vhd:43]
+WARNING: [Synth 8-614] signal 'pulse_width' is read in the process but is not in the sensitivity list [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Distance_calculation.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'Distance_calculation' (7#1) [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Distance_calculation.vhd:43]
+INFO: [Synth 8-3491] module 'BCD_converter' declared at 'C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/BCD_converter.vhd:35' bound to instance 'BCD_conv' of component 'BCD_converter' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Range_sensor.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'BCD_converter' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/BCD_converter.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'BCD_converter' (8#1) [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/BCD_converter.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Range_sensor' (9#1) [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Range_sensor.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'TopDesign' (10#1) [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/TopDesign.vhd:55]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 734.613 ; gain = 238.684
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 734.613 ; gain = 238.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 734.613 ; gain = 238.684
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/constrs_1/new/Nexys-A7.xdc]
+Finished Parsing XDC File [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/constrs_1/new/Nexys-A7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/constrs_1/new/Nexys-A7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopDesign_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopDesign_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 852.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 852.473 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 852.473 ; gain = 356.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 852.473 ; gain = 356.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 852.473 ; gain = 356.543
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'distance_reg' [C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.srcs/sources_1/new/Distance_calculation.vhd:66]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 852.473 ; gain = 356.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 14    
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module motor_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+Module Segment_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module Distance_calculation 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module BCD_converter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 14    
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uut1/out1_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 852.473 ; gain = 356.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 852.473 ; gain = 356.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 852.473 ; gain = 356.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 852.473 ; gain = 356.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 861.617 ; gain = 365.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 861.617 ; gain = 365.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 861.617 ; gain = 365.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 861.617 ; gain = 365.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 861.617 ; gain = 365.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 861.617 ; gain = 365.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    28|
+|3     |LUT1   |    10|
+|4     |LUT2   |    31|
+|5     |LUT3   |     7|
+|6     |LUT4   |    22|
+|7     |LUT5   |    16|
+|8     |LUT6   |    30|
+|9     |FDCE   |    46|
+|10    |FDRE   |    45|
+|11    |LD     |     9|
+|12    |IBUF   |     2|
+|13    |OBUF   |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+------------------------+------+
+|      |Instance            |Module                  |Cells |
++------+--------------------+------------------------+------+
+|1     |top                 |                        |   262|
+|2     |  uut1              |motor_control           |    36|
+|3     |  uut2              |Segment_driver          |    55|
+|4     |    uut1            |clock_divider           |    30|
+|5     |  uut3              |Range_sensor            |   153|
+|6     |    Pulse_width     |Distance_calculation    |   109|
+|7     |      counter_pulse |Counter__parameterized0 |    52|
+|8     |    trig_generator  |Trigger_generator       |    44|
+|9     |      trig          |Counter                 |    44|
++------+--------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 861.617 ; gain = 365.688
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 861.617 ; gain = 247.828
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 861.617 ; gain = 365.688
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 9 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 875.004 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  LD => LDCE (inverted pins: G): 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 875.004 ; gain = 582.793
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 875.004 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Christian Mada-Mbari/Downloads/detecteurMouvement/detecteurmouvement.runs/synth_1/TopDesign.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopDesign_utilization_synth.rpt -pb TopDesign_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 21 15:15:11 2022...

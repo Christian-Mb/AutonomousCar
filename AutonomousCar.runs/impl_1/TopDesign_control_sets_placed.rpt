@@ -1,0 +1,85 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Jan 21 15:15:58 2022
+| Host         : DESKTOP-J4VPNCD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopDesign_control_sets_placed.rpt
+| Design       : TopDesign
+| Device       : xc7a50t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     7 |
+|    Minimum number of control sets                        |     7 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    20 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     7 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              23 |           13 |
+| No           | No                    | Yes                    |              24 |            6 |
+| No           | Yes                   | No                     |              31 |            8 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              22 |            6 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+---------------------+-------------------------------------------+------------------+----------------+
+|     Clock Signal     |    Enable Signal    |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++----------------------+---------------------+-------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG       |                     |                                           |                3 |              4 |
+| ~pulse_pin_IBUF_BUFG |                     |                                           |                4 |              9 |
+|  uut2/uut1/clk_temp  |                     |                                           |                6 |             10 |
+|  clk_IBUF_BUFG       |                     | uut1/count[15]_i_1_n_0                    |                4 |             15 |
+|  clk_IBUF_BUFG       |                     | uut2/uut1/count[16]_i_1_n_0               |                4 |             16 |
+|  clk_IBUF_BUFG       | pulse_pin_IBUF_BUFG | uut3/trig_generator/trig/trigger_pin_OBUF |                6 |             22 |
+|  clk_IBUF_BUFG       |                     | uut3/trig_generator/trig/count[0]_i_2_n_0 |                6 |             24 |
++----------------------+---------------------+-------------------------------------------+------------------+----------------+
+
+
